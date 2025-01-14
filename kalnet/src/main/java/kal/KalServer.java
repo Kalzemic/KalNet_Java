@@ -47,7 +47,7 @@ public class KalServer {
             return;
         }
         String[] parts = ClientMessage.split(" ");
-        String filePath = parts[1].equals("/") ? "/home/kalzemic/vscode_projects/java_projects/KalNet/kalnet/src/main/webapp/index.html" : parts[1].substring(1);
+        String filePath = parts[1].equals("/") ? "kalnet/src/main/webapp/index.html" : parts[1].substring(1);
         File f=new File(filePath);
         if(f.exists() && f.isFile())
         {
